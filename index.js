@@ -15,11 +15,11 @@ function nowServing(line) {
 
 function currentLine(line) {
   if (line.length > 0) {
-    // const queue = []
-    // for (let i = 0; i < line.length; i++) {
-    //   queue.push(`${i+1}. ${}`)
-    // }
-    return `The line is currently: 1. ${line.toString().split().join(`, ${1++}. `)}`
+    const customers = []
+    for (let i = 0; i < line.length; i++) {
+      queue.push(`${i+1}. ${line[i]},`)
+    }
+    return `The line is currently:`
   } else {
     return 'The line is currently empty.'
   }
