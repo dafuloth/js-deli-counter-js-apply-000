@@ -19,7 +19,7 @@ function currentLine(line) {
     // for (let i = 0; i < line.length; i++) {
     //   queue.push(`${i+1}. ${}`)
     // }
-    return `The line is currently: 1. ${line.toString().split().join(`${, eval(1++)}. `)}`
+    return `The line is currently: 1. ${line.toString().split().join(`, ${1++}. `)}`
   } else {
     return 'The line is currently empty.'
   }
