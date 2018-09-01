@@ -13,6 +13,7 @@ function nowServing(line) {
 }
 
 
+// Tried but couldn't come up with anything better than this for loop.
 function currentLine(line) {
   if (line.length > 0) {
     const queue = []
@@ -20,7 +21,7 @@ function currentLine(line) {
       queue.push(`${i+1}. ${line[i]}`)
     }
 
-    return `The line is currently:`
+    return `The line is currently: ${queue.join(', ')}`
   } else {
     return 'The line is currently empty.'
   }
