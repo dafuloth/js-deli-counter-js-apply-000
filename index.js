@@ -20,7 +20,6 @@ function currentLine(line) {
     for (let i = 0; i < line.length; i++) {
       queue.push(`${i+1}. ${line[i]}`)
     }
-
     return `The line is currently: ${queue.join(', ')}`
   } else {
     return 'The line is currently empty.'
